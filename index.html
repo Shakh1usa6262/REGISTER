@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First</title>
+    <link rel="website icon" type="ico" href="../GitHub.ico">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Menu</li>
+                <li>About</li>
+                <li>Contact ME</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+     
+            <h1>Assalom aleykum</h1>
+          <button id="sign">Sign up</button>
+
+    </section>
+
+    <div class="modal_back">
+    </div>
+
+    <div class="modal">
+        <h2>Siz alaqachon Registratsiya bo'lgansiz!</h2>
+        <p>✅</p>
+        <button id="close">❌</button>
+    </div>
+    
+
+<footer>
+    <div class="lef">
+        <h3>Email:</h3>
+        <h3>Phone Number:</h3>
+        <h3>Suport:</h3>
+    </div>
+    <div class="right">
+        <h3>shakh2964@gmail.com</h3>
+        <h3>+998 99 385 0114</h3>
+        <h3> <a href="https://t.me/Shakh1uzb" target="_blank">Telegram</a> </h3>
+    </div>
+</footer>
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const modal = document.querySelector(".modal");
+    const modalBack = document.querySelector(".modal_back");
+    const signBtn = document.getElementById('sign'); // Sign tugmasi
+    const closeBtn = document.getElementById('close'); // Yopish tugmasi
+
+   
+    signBtn.addEventListener("click", function() {
+        modal.style.display = "flex"; 
+        modalBack.style.display = "block";
+    });
+
+    modalBack.addEventListener("click", function() {
+        modal.style.display = "none";
+        modalBack.style.display = "none";
+    });
+
+    closeBtn.addEventListener("click", function() {
+        modal.style.display = "none";
+        modalBack.style.display = "none";
+    });
+});
+
+        </script>
+</body>
+</html>
